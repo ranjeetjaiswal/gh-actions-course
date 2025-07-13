@@ -10,6 +10,8 @@ jobs:
         echo "Runner OS: $RUNNER_OS"
         echo "Event type: ${{github.event_type}}"
   windows-echo:
+    if: github.event.base_ref == 'refs/heads/main' || github.ref == 'refs/heads/main'
+    needs: ubuntu-echo
     runs-on: windows-latest
     steps:
     -  name: Show OS
