@@ -13,6 +13,7 @@ jobs:
     runs-on: windows-latest
     steps:
     -  name: Show OS
+       shell: bash
        run: |
          echo "This is showing runner host where it is running"
          echo "Runner OS: $RUNNER_OS"
