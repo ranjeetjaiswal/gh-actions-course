@@ -19,4 +19,3 @@ jobs:
        run: |
          echo "This is showing runner host where it is running"
          echo "Runner OS: $RUNNER_OS"
-    
