@@ -8,3 +8,12 @@ jobs:
     - name: Show OS
       run: |
         echo "Runner OS: $RUNNER_OS"
+        echo "Event type: ${{github.event_type}}"
+  windows-echo:
+    runs-on: windows-latest
+    steps:
+    -  name: Show OS
+       run: |
+         echo: "This is showing runner host where it is running"
+         echo: "Runner OS: $RUNNER_OS"
+    
